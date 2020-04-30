@@ -1,7 +1,144 @@
+.header {
+position: absolute;
+margin: 0 auto; width: 100%;
+background: #661F1F;
+padding-top: 10px;
+vertical-align: middle;
+}
+
 body {
-  background:#999;
-  font-family: arial;
+  background:#F9F9F9;
+  font-family: roboto;
 }
 h1 {
   color:#555;
+}
+
+.Title{
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: 0px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.bigbox{
+  width:33%;
+  float:left;
+}
+
+.hid{
+  display: block;
+  visibility: hidden;
+}
+
+.newshead {
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  left: 36px;
+  top: 177px;
+
+  background: #880404;
+}
+
+.newsbody {
+  position: absolute;
+  width: 300px;
+  height: 114px;
+  left: 36px;
+  top: 249px;
+
+  background: #C4C4C4;
+}
+
+.title_word{
+
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 15px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+.trendinghead {
+  position: absolute;
+width: 300px;
+height: 60px;
+left: 36px;
+top: 369px;
+
+background: #880404;
+}
+
+.trendingbody {
+  position: absolute;
+width: 300px;
+height: 207px;
+left: 36px;
+top: 434px;
+
+background: #C4C4C4;
+}
+
+.summaryhead {
+
+  position: absolute;
+width: 469px;
+height: 60px;
+left: 383.5px;
+top: 177px;
+
+background: #880404;
+}
+
+.summarybody {
+
+  position: absolute;
+width: 469px;
+height: 115px;
+left: 383.5px;
+top: 248px;
+
+background: #C4C4C4;
+
+}
+
+.summarygraph {
+  position: absolute;
+width: 469px;
+height: 265px;
+left: 383.5px;
+top: 374px;
+
+background: #C4C4C4;
+}
+
+.coronatipshead {
+  position: absolute;
+width: 300px;
+height: 60px;
+left: 900px;
+top: 177px;
+
+background: #880404;
+}
+
+.coronatips {
+  position: absolute;
+width: 300px;
+height: 391px;
+left: 900px;
+top: 248px;
+
+background: #C4C4C4;
 }
