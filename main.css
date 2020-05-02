@@ -1,0 +1,20 @@
+body {
+  /* font: "Roboto"; */
+}
+
+:root {
+  --light-gray: #aaaaaa;
+}
+
+tr th {
+  font-size: 0.8rem;
+}
+
+td {
+  font-size: 3rem;
+  color: var(--danger);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
