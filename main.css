@@ -1,18 +1,51 @@
 body {
   /* font: "Roboto"; */
+  font-family: 'Roboto', sans-serif;
+}
+
+h4 h2 .h1{
+  color: var(--white);
+}
+
+.blue{
+    background-color: #012852;
+}
+
+.white {
+  color: var(--white);
+}
+
+h2 {
+    font-size: 3rem;
+    color: var(--white)
+}
+
+h1 {
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+  color: var(--white);
 }
 
 :root {
   --light-gray: #aaaaaa;
+  --white: #ffffff;
+  --deep-blue: #012852;
+  --reed: #a70211;
 }
 
 tr th {
+  font-style: bold;
   font-size: 0.8rem;
 }
 
 td {
   font-size: 3rem;
-  color: var(--danger);
+  color: var(--reed);
 }
 
 .bg-light-gray {
@@ -21,4 +54,12 @@ td {
 
 .standard{
   font-size: 0.8rem;
+}
+
+.smol{
+  font-size: 0.8rem;
+}
+
+img {
+  max-width:40px;
 }
