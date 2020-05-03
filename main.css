@@ -18,3 +18,7 @@ td {
 .bg-light-gray {
   background-color: var(--light-gray);
 }
+
+.standard{
+  font-size: 0.8rem;
+}
