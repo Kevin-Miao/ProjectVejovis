@@ -8,7 +8,7 @@ h4 h2 .h1{
 }
 
 .blue{
-    background-color: #012852;
+    background-color: var(--deep-blue);
 }
 
 .white {
@@ -60,7 +60,7 @@ td {
   font-size: 0.8rem;
 }
 
-img {
+header img {
   max-height:100px;
 }
 
@@ -73,4 +73,20 @@ img {
 
 .mouse {
     cursor: pointer;
+}
+
+#dss-logo {
+  max-width: 200px;
+}
+
+.footer {
+  font-size: 0.9rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#twitter-widget-0 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block !important;
 }

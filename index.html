@@ -4,7 +4,7 @@
 <head>
   <!--Fonts-->
   <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   </style>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -17,90 +17,111 @@
   <title>Vejovis - Corona Tracking</title>
 </head>
 
-<!-- Pop Up Screen -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Time-Series Modeling</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        More information about our time-series modeling.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Body -->
 <body>
-  <div class="container-fluid">
-    <div class="row blue mb-4 py-3">
-      <div class="col mb-3 py-3">
-        <img class="centra" src="Logos/Vejovis White Logo.png"></img>
-        <!-- <h2 class="text-center">VEJOVIS</h2>
-        <h4 class="text-center">Real-time Coronavirus Tracking</h4> -->
+  <header>
+    <div class="container-fluid">
+      <div class="row blue mb-4 py-3">
+        <div class="col mb-3 py-3">
+          <img class="centra" src="Logos/Vejovis White Logo.png" alt="Vejovis Real-time Coronavirus Tracking">
+        </div>
       </div>
     </div>
-    <div class="row px-3">
-      <div class="col-lg-3">
-        <h1 class="text-center blue py-3"> News </h1>
-        <div class="bg-light-gray p-5">
-          <div class="row">
-            <div class="col">
-              <p> hello </p>
-            </div>
-
-            <div class="col">
-              <p> hello </p>
-            </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row px-3">
+        <div class="col-lg-6 mb-3">
+          <h1 class="text-center blue py-3"> Summary <sup class="standard mouse" data-toggle="modal" data-target="#exampleModal"> ⓘ </sup> </h1>
+          <div class="table-responsive">
+            <table class="table text-center table-borderless bg-light-gray">
+              <thead>
+                <tr>
+                  <th scope="col">US Deaths</th>
+                  <th scope="col">Predicted Death Range Change</th>
+                  <th scope="col">US Cases</th>
+                  <th scope="col">Prediction</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>420</td>
+                  <td>420</td>
+                  <td>420</td>
+                  <td>420</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bg-light-gray p-4 mt-2">
+            <p>graph stuff</p>
           </div>
         </div>
+        <div class="col-lg-3 mb-3 order-lg-first">
+          <h1 class="text-center blue py-3"> News </h1>
+          <div class="bg-light-gray p-5">
+            <div class="row">
+              <div class="col">
+                <p> hello </p>
+              </div>
 
-        <h1 class="text-center blue mt-2 py-3"> Trending </h1>
-        <div class="bg-light-gray p-5">
-<a class="twitter-timeline" data-lang="en" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/KJHMiao/lists/corona1?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>       </div>
-      </div>
-      <div class="col-lg-6">
-        <h1 class="text-center blue py-3"> Summary <sup class="standard mouse" data-toggle="modal" data-target="#exampleModal"> ⓘ <sup/> </h1>
-        <div class="table-responsive">
-          <table class="table text-center table-borderless bg-light-gray">
-            <thead>
-              <tr>
-                <th scope="col">US Deaths</th>
-                <th scope="col">Predicted Death Range Change</th>
-                <th scope="col">US Cases</th>
-                <th scope="col">Prediction</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>420</td>
-                <td>420</td>
-                <td>420</td>
-                <td>420</td>
-              </tr>
-            </tbody>
-          </table>
+              <div class="col">
+                <p> hello </p>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="text-center blue mt-2 py-3"> Trending </h1>
+          <div class="bg-light-gray p-5">
+            <a class="twitter-timeline tw-align-center" data-lang="en" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/KJHMiao/lists/corona1?ref_src=twsrc%5Etfw"></a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
         </div>
-        <div class="bg-light-gray p-4 mt-2">
-          <p>graph stuff</p>
+        <div class="col-lg-3 mb-3">
+          <h1 class="text-center blue py-3"> Corona Tips</h1>
+          <div class="bg-light-gray p-5">
+            <p>this is some placeholder text</p>
+          </div>
+          <h1 class="text-center blue py-3 mt-2"> About Us</h1>
+          <div class="bg-light-gray p-5">
+            <div class="mx-auto">
+              <img src="DSSBerk.png" class="w-100 centra" id="dss-logo" alt="Berkeley Data Science Society">
+            </div>
+            <p>We're a group of students studying at the University of California, Berkeley interested in applying our data science and programming skills to study COVID-19. We hope that this dashboard can provide a centralized, realiable source of information regarding the virus.</p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-3">
-        <h1 class="text-center blue py-3"> Corona Tips</h1>
-        <div class="bg-light-gray p-5">
-          <p>this is some placeholder text</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer mt-5 blue">
+      <div class="container text-light text-center">
+        Made with ❤️ by Aniket Mandalik, Jeremy Mui, Kevin Miao, Kevin Woo, Leo Xiao, Mina Kim, Pooja Eega, and Varun Murthy
+      </div>
+    </div>
+  </footer>
+
+  <!-- Pop Up Screen -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Time-Series Modeling</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          More information about our time-series modeling.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
