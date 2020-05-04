@@ -61,5 +61,11 @@ td {
 }
 
 img {
-  max-width:40px;
+  max-height:100px;
+}
+
+.centra {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
