@@ -39,35 +39,37 @@
               <thead>
                 <tr>
                   <th scope="col">US Deaths</th>
-                  <th scope="col">Predicted Death Range Change</th>
-                  <th scope="col">US Cases</th>
-                  <th scope="col">Prediction</th>
+                  <th scope="col">CA Cases</th>
+                  <th scope="col">Predicted CA Growth</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>420</td>
-                  <td>420</td>
-                  <td>420</td>
-                  <td>420</td>
+                  <td>25375</td>
+                  <td>38068</td>
+                  <td>+1752</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div class="bg-light-gray p-4 mt-2">
-            <p>graph stuff</p>
+            <p><iframe width="630" height="430" frameborder="0" scrolling="no" src="http://plotly.com/~KevinMiao/38.embed"></iframe></p>
           </div>
         </div>
         <div class="col-lg-3 mb-3 order-lg-first">
-          <h1 class="text-center blue py-3"> News </h1>
+          <h1 class="text-center blue py-3"> Sentiment </h1>
           <div class="bg-light-gray p-5">
             <div class="row">
               <div class="col">
-                <p> hello </p>
+                <p class='text-center'> Today's sentiment </p>
+                <p class="Good text-center"> + </p>
               </div>
 
               <div class="col">
-                <p> hello </p>
+                <p class="tiny"> For our sentiment rating, we display the average daily sentiment of tweets related to Coronavirus.
+                <p></p>
+
+                <sup class="standard mouse" data-toggle="modal" data-target="#exampleModal1"> More Information </sup>
               </div>
             </div>
           </div>
@@ -134,7 +136,34 @@
           </button>
         </div>
         <div class="modal-body">
-          More information about our time-series modeling.
+          At this moment, we only limited our analysis to Californian COVID-19 Prediction Cases.
+          In future, we will be expanding this to the U.S. cases and then to other countries in the world.
+
+          ARIMA is a time series modeling tool that stands for Autoregressive integrated moving average. The data for this model has been gratefully been shared by our colleagues at Johns Hopkins University.
+          (Source: https://github.com/CSSEGISandData)
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pop Up Screen 2 -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Natural Language Processing: Sentiment</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          For our analysis of the general sentiment, we pulled twitter data that were related to the Coronavirus, i.e. containing hashtags such as - but not limited to - #COVID-19, #CoronaVirus.
+          In order to create a sentiment score, we utilized NLP algorithms that include the VADER lexicon that maps words to different polarity scores. Generally positive scores are translated into a '+' and negative scores will show up on our website as a '-'.
+          Here below, you can find the historical sentiment from previous days:
+          <img width="400" align='center' src="sentiment.png"></img>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

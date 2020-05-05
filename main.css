@@ -14,6 +14,14 @@ h4 h2 .h1{
 .white {
   color: var(--white);
 }
+.Good {
+  color: var(--green);
+  font-size: 3rem;
+}
+
+.tiny{
+  font-size: 0.75rem;
+}
 
 h2 {
     font-size: 3rem;
@@ -36,6 +44,7 @@ h4 {
   --white: #ffffff;
   --deep-blue: #012852;
   --reed: #a70211;
+  --green: #115201;
 }
 
 tr th {
